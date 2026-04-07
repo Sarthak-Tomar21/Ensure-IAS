@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ensure IAS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="loginPage" class="center">
+  <div class="login-box">
+    <img src="logo.png" class="logo">
+    <h2>Ensure IAS</h2>
+
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+    <p id="error" class="error"></p>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+  
+  <nav>
+    <button onclick="showSection('course')">My Course</button>
+    <button onclick="showSection('tests')">Test Series</button>
+    <button onclick="showSection('profile')">Profile</button>
+  </nav>
+
+  <!-- MY COURSE -->
+  <div id="course" class="section">
+    <div class="card">
+      <h2>UPSC GS Test Series</h2>
+      <p><strong>Price:</strong> ₹15,000</p>
+      <p><strong>Purchase Date:</strong> 1 April 2026</p>
+      <p><strong>Expiry Date:</strong> 31 May 2026</p>
+
+      <p class="desc">
+        Pre-Sure All India TEST Series Prelims 2026
+Your Gateway to Success in UPSC Exams!
+
+Prepare for the UPSC Prelims 2026 with ENSURE IAS Pre-Sure All India Test Series Prelims 2026 – a comprehensive, result-oriented program designed to give you an edge in your exam preparation. With expert guidance, in-depth analysis, and over 50 meticulously crafted tests, this series will help you refine your strategy, assess your performance, and boost your confidence to take on the UPSC challenges.
+
+Why Choose Pre-Sure All India Test Series Prelims 2026?
+
+Overview of Prelims Test Series Courses
+
+50 Total Tests: Covering 35 General Studies (G.S) and 15 CSAT tests, this series ensures a holistic approach to your preparation.
+Real Exam Simulation: Sectional tests and full-length tests mirror the actual UPSC exam pattern, giving you the best chance to practice under exam-like conditions.
+Test Discussions: Get detailed discussions and analysis every Sunday to track your progress and fine-tune your strategy.
+      </p>
+    </div>
+  </div>
+
+  <!-- TEST SERIES -->
+  <div id="tests" class="section hidden">
+    <div class="card">
+      <h2>Test Series PDFs</h2>
+      <div id="testList"></div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div id="profile" class="section hidden">
+    <div class="card">
+      <h2>Profile</h2>
+      <p><strong>Name:</strong> Tanvi Sharma</p>
+      <p><strong>Mobile:</strong> 9760013212</p>
+      <p><strong>Course:</strong> UPSC GS Test Series</p>
+      <p><strong>Purchase Date:</strong> 1 April 2026</p>
+      <p><strong>Expiry Date:</strong> 31 May 2026</p>
+
+      <button class="logout" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
