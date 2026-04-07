@@ -45,7 +45,7 @@ function generateTests() {
 
     div.innerHTML = `
       <span>Test ${i}</span>
-      <a href="pdf/test${i}.pdf" target="_blank">Download PDF</a>
+      <a href="test${i}.pdf" target="_blank">Download PDF</a>
     `;
 
     container.appendChild(div);
